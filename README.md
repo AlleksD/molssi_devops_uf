@@ -11,6 +11,13 @@ This is demo project for UF MolSSI workshop
 
 Copyright (c) 2019, Alexander
 
+#### Description
+
+Used for the first manual commit. 
+Please run:
+
+```pip install -e .```
+
 
 #### Acknowledgements
  
