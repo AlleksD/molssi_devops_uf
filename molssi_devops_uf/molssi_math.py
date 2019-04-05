@@ -15,11 +15,16 @@ def my_mean(inp):
     """
     result = 0
     count = 0
-    for t in inp:
-        if isinstance(t, int) or isinstance(t, float):
-            result += float(t)
-            count += 1
-    return result / float(count)
+    if inp:
+        if isinstance(inp, list): 
+            for t in inp:
+                if isinstance(t, int) or isinstance(t, float):
+                    result += float(t)
+                    count += 1
+            result /= float(count)
+        else:
+            raise TypeError('Input is not a list')
+    return result
 
 def canvas(with_attribution=True):
     """
