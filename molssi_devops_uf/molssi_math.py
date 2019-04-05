@@ -2,9 +2,24 @@
 molssi_math.py
 This is demo project for UF MolSSI workshop
 
-Handles the primary functions
+Library of math utilities
 """
 
+def my_mean(inp):
+    """
+    Calculate average of numerical values in the list
+    Parameters
+    ----------
+    inp : list
+        input
+    """
+    result = 0
+    count = 0
+    for t in inp:
+        if isinstance(t, int) or isinstance(t, float):
+            result += float(t)
+            count += 1
+    return result / float(count)
 
 def canvas(with_attribution=True):
     """
