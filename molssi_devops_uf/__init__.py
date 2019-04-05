@@ -5,6 +5,7 @@ This is demo project for UF MolSSI workshop
 
 # Add imports here
 from .molssi_math import *
+from .str_utils.py import *
 
 # Handle versioneer
 from ._version import get_versions
